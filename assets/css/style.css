@@ -1,0 +1,47 @@
+/*
+--cyan-process: #37b2e6ff;
+--canary: #f9ff85ff;
+--atomic-tangerine: #ff934fff;
+--paradise-pink: #df5368ff;
+*/
+*{
+    font-size: 10px;
+}
+p {
+    font-size: 1.6rem;
+}
+/*-----------------------------------------------------Nav*/
+.navbar {
+    margin-bottom: 0;
+    border: 0;
+    width: 100%;
+    height:4.5rem;
+    background-color: rgba(249, 255, 133, 0.8);
+    
+}
+.navbar-toggler{
+    left:0;
+}
+.navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 147, 79, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    font-size: 2rem;
+}
+.navbar .navbar-nav a {
+    color: #ff934fff;
+    font-family: 'Exo', serif;
+}
+.navbar .navbar-nav a:hover {
+    color: #ff934fff;
+}
+.navbar .navbar-toggler{
+    border: 0;
+}
+ul li a {
+    font-size: 1.6rem;
+}
+
+/*-----------------------------------------------------Map*/
+div#map {
+    min-height: 360px;
+    min-width: 360px;
+}
