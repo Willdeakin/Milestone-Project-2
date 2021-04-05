@@ -33,11 +33,17 @@ ul li a {
     font-size: 1.6rem;
 }
 /*-----------------------------------------------------Pick*/
-#alert{
+.alert{
     top:6rem;
 }
-#pick{
-    top: 6rem;
+.pick{
+    padding-top: 6rem;
+}
+.btn-primary{
+    font-size:1.6rem;
+    padding-left:1.5%;
+    padding-right:1.5%;
+    width: 24%;
 }
 /*-----------------------------------------------------Map*/
 div#map {
