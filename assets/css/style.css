@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+slab:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 /*
 --cyan-process: #37b2e6ff;
 --canary: #f9ff85ff;
@@ -10,13 +11,16 @@
 p {
     font-size: 1.6rem;
 }
+body{
+    font-family: 'roboto', serif;
+}
 /*-----------------------------------------------------Nav*/
 .navbar {
     margin-bottom: 0;
     border: 0;
     width: 100%;
     height:4.5rem;
-    background-color: rgba(249, 255, 133, 0.8);
+    background-color: rgba(249, 255, 133, 1);
     
 }
 .navbar .navbar-nav a {
@@ -40,16 +44,41 @@ ul li a {
     padding-top: 6rem;
 }
 .btn-primary{
+    font-size: 1.2rem;
     position: center;
     width: 24.5%;
     margin-right: 0;
     display: inline-block;
     vertical-align:top;
-    border: 0.2rem, solid, #fff;
+    background-color: #37b2e6ff;
+    border-color: #37b2e6ff;
 }
 /*-----------------------------------------------------Map*/
 div#map {
     min-height: 360px;
     min-width: 360px;
     top:5rem;
+}
+
+/*-----------------------------------------------------Selection*/
+#selection{
+    padding-top:5rem;
+}
+.selection-box{
+    background-color: #f9ff85ff;
+}
+
+/*-----------------------------------------------------Recommended*/
+#recommended{
+    padding-top:5rem;
+}
+.recommended-box{
+    background-color: #f9ff85ff;
+}
+
+/*-----------------------------------------------------Headings/Text*/
+.holiday-headings{
+    text-align:center;
+    text-transform: underline;
+    color: #df5368ff;
 }
