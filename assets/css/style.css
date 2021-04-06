@@ -36,18 +36,20 @@ ul li a {
 .alert{
     top:6rem;
 }
-.pick{
+.pick-buttons{
     padding-top: 6rem;
 }
 .btn-primary{
-    font-size:1.6rem;
-    padding-left:1.5%;
-    padding-right:1.5%;
-    width: 24%;
+    position: center;
+    width: 24.5%;
+    margin-right: 0;
+    display: inline-block;
+    vertical-align:top;
+    border: 0.2rem, solid, #fff;
 }
 /*-----------------------------------------------------Map*/
 div#map {
     min-height: 360px;
     min-width: 360px;
-    top:10rem;
+    top:5rem;
 }

@@ -28,34 +28,37 @@
 
 <body>
 <div class="container-fluid">
-    <nav class="navbar navbar-expand-md fixed-top">
+    <nav class="navbar navbar-expand fixed-top">
 ​
         
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item mr-2"><a class="nav-link" href="#pick">Pick your holiday</a></li>
                 <li class="nav-item mr-2"><a class="nav-link" href="#map">Go to our map</a></li>
+                <li class="nav-item mr-2"><a class="nav-link" href="#selection">Look at your selection</a></li>
+                <li class="nav-item mr-2"><a class="nav-link" href="#recommended">Look at our recommended destinations</a></li>
+
             </ul>
         
         <div class="navbar-logo"></div>
     </nav>
 </div>
 
-<section class="" >
-    <div class="alert alert-warning row" role="alert">
+<section>
+    <div class="alert alert-warning" role="alert">
   Due to COVID-19, some holiday locations won't be available. Check if your holiday destination is allowing tourism <a href="https://www.gov.uk/guidance/transport-measures-to-protect-the-uk-from-variant-strains-of-covid-19"> here</a>
     </div>
 </section>
 
-<section class="container-fluid pick">
-    <div class="row">
-        <button type="button" class="btn btn-primary ">Sunny</button>
-        <button type="button" class="btn btn-primary ">City break</button>
-        <button type="button" class="btn btn-primary ">Rural</button>
-        <button type="button" class="btn btn-primary ">Cultural</button>
-        <button type="button" class="btn btn-primary ">Sightseeing</button>
-        <button type="button" class="btn btn-primary ">Natural Wonder</button>
-        <button type="button" class="btn btn-primary ">Great Food</button>
-        <button type="button" class="btn btn-primary ">Amazing Architecture</button>
+<section class="container-fluid" id="pick">
+    <div class="row pick-buttons">
+        <button type="button" class="btn btn-primary col-3">Sunny</button>
+        <button type="button" class="btn btn-primary col-3">City break</button>
+        <button type="button" class="btn btn-primary col-3">Rural</button>
+        <button type="button" class="btn btn-primary col-3">Cultural</button>
+        <button type="button" class="btn btn-primary col-3">Sightseeing</button>
+        <button type="button" class="btn btn-primary col-3">Natural Wonder</button>
+        <button type="button" class="btn btn-primary col-3">Great Food</button>
+        <button type="button" class="btn btn-primary col-3">Amazing Architecture</button>
     </div>
 </section>
 
@@ -63,6 +66,16 @@
 
 <div class="col-12 container-fluid" id="map"></div>
 
+<section id="selection">
+
+
+</section>
+
+
+<section id="recommended">
+
+
+</section>
 <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAspAZNGShF4-23-amBwH5KPgxwfOoZlKc&callback=initMap&libraries=&v=weekly" async></script>    
 <script src="assets/js/map.js"></script>
