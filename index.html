@@ -34,8 +34,8 @@
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item mr-2"><a class="nav-link" href="#pick">Pick your holiday</a></li>
                 <li class="nav-item mr-2"><a class="nav-link" href="#map">Go to our map</a></li>
-                <li class="nav-item mr-2"><a class="nav-link" href="#selection">Look at your selection</a></li>
-                <li class="nav-item mr-2"><a class="nav-link" href="#recommended">Look at our recommended destinations</a></li>
+                <li class="nav-item mr-2"><a class="nav-link" href="#selection">Your selection</a></li>
+                <li class="nav-item mr-2"><a class="nav-link" href="#recommended">Our recommended destinations</a></li>
 
             </ul>
         
@@ -51,14 +51,14 @@
 
 <section class="container-fluid" id="pick">
     <div class="row pick-buttons">
-        <button type="button" class="btn btn-primary col-3">Sunny</button>
-        <button type="button" class="btn btn-primary col-3">City break</button>
-        <button type="button" class="btn btn-primary col-3">Rural</button>
-        <button type="button" class="btn btn-primary col-3">Cultural</button>
-        <button type="button" class="btn btn-primary col-3">Sightseeing</button>
-        <button type="button" class="btn btn-primary col-3">Natural Wonder</button>
-        <button type="button" class="btn btn-primary col-3">Great Food</button>
-        <button type="button" class="btn btn-primary col-3">Amazing Architecture</button>
+        <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" >Sunny</button>
+        <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" >City break</button>
+        <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" >Rural</button>
+        <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" >Cultural</button>
+        <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" >Sightseeing</button>
+        <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" >Natural Wonder</button>
+        <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" >Great Food</button>
+        <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" >Amazing Architecture</button>
     </div>
 </section>
 
@@ -70,6 +70,20 @@
     <h1 class="holiday-headings">Based on your tags:</h1>
     <div class="row">
         <div class="col-6 selection-box">
+            <div class="row">
+                <div class="col-6">
+                    <h4>Destination</h4>
+                <p>A summary of the destination and surrounding area</p>
+                </div>
+                <div class="col-6">
+                    <!--stock image-->
+                <p>A brief description of activities at the destination (filter tag appropriate)</p>
+                </div>
+                
+            </div>
+        </div>
+
+         <div class="col-6 selection-box sunny">
             <div class="row">
                 <div class="col-6">
                     <h4>Destination</h4>

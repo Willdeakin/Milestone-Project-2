@@ -53,6 +53,10 @@ ul li a {
     background-color: #37b2e6ff;
     border-color: #37b2e6ff;
 }
+.active{
+    background-color: red;
+    border-color: red;
+}
 /*-----------------------------------------------------Map*/
 div#map {
     min-height: 360px;
@@ -66,6 +70,7 @@ div#map {
 }
 .selection-box{
     background-color: #f9ff85ff;
+    border: 0.25rem solid #ff934fff;
 }
 
 /*-----------------------------------------------------Recommended*/
@@ -74,6 +79,7 @@ div#map {
 }
 .recommended-box{
     background-color: #f9ff85ff;
+    border: 0.25rem solid #ff934fff;
 }
 
 /*-----------------------------------------------------Headings/Text*/
@@ -81,4 +87,5 @@ div#map {
     text-align:center;
     text-transform: underline;
     color: #df5368ff;
+    font-family: 'Exo', serif;
 }
