@@ -58,6 +58,9 @@ ul li a {
     border-color: red;
 }
 /*-----------------------------------------------------Map*/
+#mapid{
+    min-height: 35rem;
+}
 div#map {
     min-height: 360px;
     min-width: 360px;

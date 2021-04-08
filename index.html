@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Your Best Trip</title>
-
     <!--Bootstrap-->
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -24,31 +22,31 @@
     <script src="assets/js/map.js"></script>
     <!--My picking js-->
     <script src="assets/js/pick.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+          integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+          crossorigin=""/>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+            crossorigin=""></script>
 </head>
-
 <body>
 <div class="container-fluid">
     <nav class="navbar navbar-expand fixed-top">
-​
-        
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item mr-2"><a class="nav-link" href="#pick">Pick your holiday</a></li>
                 <li class="nav-item mr-2"><a class="nav-link" href="#map">Go to our map</a></li>
                 <li class="nav-item mr-2"><a class="nav-link" href="#selection">Your selection</a></li>
                 <li class="nav-item mr-2"><a class="nav-link" href="#recommended">Our recommended destinations</a></li>
-
             </ul>
-        
         <div class="navbar-logo"></div>
     </nav>
 </div>
-
 <section>
     <div class="alert alert-warning" role="alert">
   Due to COVID-19, some holiday locations won't be available. Check if your holiday destination is allowing tourism <a href="https://www.gov.uk/guidance/transport-measures-to-protect-the-uk-from-variant-strains-of-covid-19"> here</a>
     </div>
 </section>
-
 <section class="container-fluid" id="pick">
     <div class="row pick-buttons">
         <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" >Sunny</button>
@@ -59,13 +57,57 @@
         <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" >Natural Wonder</button>
         <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" >Great Food</button>
         <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" >Amazing Architecture</button>
+        <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" onclick="berlin_map();" >Berlin</button>
+        <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" onclick="hong_kong_map();" >Hong Kong</button>
+        <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" onclick="paris_map();" >Paris</button>
+        <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" onclick="rome_map();" >Rome</button>
+
     </div>
 </section>
-
-
-
-<div class="col-12 container-fluid" id="map"></div>
-
+<!--<div class="col-12 container-fluid" id="map"></div>-->
+<div class="col-12 container-fluid" id="mapid"></div>
+<script>
+    var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        maxZoom: 18,
+        id: 'mapbox/streets-v11',
+        tileSize: 512,
+        zoomOffset: -1,
+        accessToken: 'pk.eyJ1IjoiNXBlbmNlc3BlbmNlIiwiYSI6ImNrbWk4c3R1MDBld3QydXF2czR5NmNqNTIifQ.8G4oo2NMwbYjWvajipthaA'
+    }).addTo(mymap);
+    var marker = L.marker([51.5, -0.09]).addTo(mymap);
+    var circle = L.circle([51.508, -0.11], {
+        color: 'red',
+        fillColor: '#f03',
+        fillOpacity: 0.5,
+        radius: 500
+    }).addTo(mymap);
+    var polygon = L.polygon([
+        [51.509, -0.08],
+        [51.503, -0.06],
+        [51.51, -0.047]
+    ]).addTo(mymap);
+    marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
+    circle.bindPopup("I am a circle.");
+    polygon.bindPopup("I am a polygon.");
+    var popup = L.popup()
+        .setLatLng([51.5, -0.09])
+        .setContent("I am a standalone popup.")
+        .openOn(mymap);
+    function berlin_map() {
+        mymap.panTo(new L.LatLng(52.5200, 13.4050));
+    }
+    function hong_kong_map() {
+        mymap.panTo(new L.LatLng(22.3193, 114.1694));
+    }
+    function paris_map() {
+        mymap.panTo(new L.LatLng(48.8566, 2.3522));
+    }
+    function rome_map() {
+        mymap.panTo(new L.LatLng(41.9028, 12.4964));
+    }
+</script>
 <section id="selection">
     <h1 class="holiday-headings">Based on your tags:</h1>
     <div class="row">
@@ -79,10 +121,8 @@
                     <!--stock image-->
                 <p>A brief description of activities at the destination (filter tag appropriate)</p>
                 </div>
-                
             </div>
         </div>
-
          <div class="col-6 selection-box sunny">
             <div class="row">
                 <div class="col-6">
@@ -93,14 +133,10 @@
                     <!--stock image-->
                 <p>A brief description of activities at the destination (filter tag appropriate)</p>
                 </div>
-                
             </div>
         </div>
     </div>
-
 </section>
-
-
 <section id="recommended">
     <h1 class="holiday-headings">This time of year we recommend:</h1>
     <div class="row">
@@ -114,15 +150,12 @@
                     <!--stock image-->
                 <p>A brief description of activities at the destination (filter tag appropriate)</p>
                 </div>
-                
             </div>
         </div>
     </div>
-
 </section>
-<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAspAZNGShF4-23-amBwH5KPgxwfOoZlKc&callback=initMap&libraries=&v=weekly" async></script>    
-<script src="assets/js/map.js"></script>
+<!--<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>-->
+<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAspAZNGShF4-23-amBwH5KPgxwfOoZlKc&callback=initMap&libraries=&v=weekly" async></script>    -->
+<!--<script src="assets/js/map.js"></script>-->
 </body>
-
 </html>
