@@ -25,6 +25,12 @@
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
             integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
             crossorigin=""></script>
+    <!--Jquery-->
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+        
 </head>
 <body>
 <div class="container-fluid">
@@ -45,7 +51,7 @@
 </section>
 <section class="container-fluid" id="pick">
     <div class="row pick-buttons">
-        <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" >Sunny</button>
+        <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" onclick="get_sunny()">Sunny</button>
         <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" >City break</button>
         <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" >Rural</button>
         <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" >Cultural</button>
@@ -63,6 +69,7 @@
 
 
 <div class="col-12 container-fluid" id="mapid"></div>
+
 
 <section id="selection">
     <h1 class="holiday-headings">Based on your tags:</h1>

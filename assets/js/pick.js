@@ -1,7 +1,12 @@
 var selectionArr = document.getElementsByClassName("selection-box");
 
-for (var i=0; i<selectionArr.length; i++){
-    $(this).removeClass("d-inline-block");
-    $(this).addClass("d-none");
+/*
+$(".selection-box").hide();
+*/
+
+function get_sunny() {
+    for (var i = 0; i < selectionArr; i++){
+        $(".selection-box").filter(".sunny").toggle();
+    }
 }
 
