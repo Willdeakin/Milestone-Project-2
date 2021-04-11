@@ -51,15 +51,13 @@
 </section>
 <section class="container-fluid" id="pick">
     <div class="row pick-buttons">
-        <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" onclick="get_sunny()">Sunny</button>
-        <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" >City break</button>
-        <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" >Rural</button>
-        <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" >Cultural</button>
-        <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" >Sightseeing</button>
-        <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" >Natural Wonder</button>
-        <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" >Great Food</button>
-        <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" >Amazing Architecture</button>
-        <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" onclick="berlin_map();" >Berlin</button>
+        <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" id="sunny_pick">Sunny</button>
+        <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" id="city_pick">City break</button>
+        <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" id="cultural_pick">Cultural</button>
+        <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" id="sight_pick">Sightseeing</button>
+        <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" id="wonder_pick">Natural Wonder</button>
+        <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" id="food_pick">Great Food</button>
+        <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" id="architecture_pick">Amazing Architecture</button>
         <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" onclick="hong_kong_map();" >Hong Kong</button>
         <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" onclick="paris_map();" >Paris</button>
         <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" onclick="rome_map();" >Rome</button>
@@ -77,7 +75,7 @@
         <div class="col-6 selection-box">
             <div class="row">
                 <div class="col-6">
-                    <h4>Destination</h4>
+                    <button type="button" class="btn btn-location" data-toggle="button" aria-pressed="false" onclick="berlin_map();" >Berlin</button>
                 <p>A summary of the destination and surrounding area</p>
                 </div>
                 <div class="col-6">
@@ -86,7 +84,7 @@
                 </div>
             </div>
         </div>
-         <div class="col-6 selection-box sunny">
+         <div class="col-6 selection-box" id="sunny">
             <div class="row">
                 <div class="col-6">
                     <h4>Destination</h4>

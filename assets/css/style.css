@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+slab:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 /*
 --cyan-process: #37b2e6ff;
---canary: #f9ff85ff;
---atomic-tangerine: #ff934fff;
+--laser-lemon: #f7ff58ff;
+--safety-orange-blaze-orange: #ff680aff;
 --paradise-pink: #df5368ff;
 */
 *{
@@ -24,11 +24,11 @@ body{
     
 }
 .navbar .navbar-nav a {
-    color: #ff934fff;
+    color: #ff680aff;
     font-family: 'Exo', serif;
 }
 .navbar .navbar-nav a:hover {
-    color: #ff934fff;
+    color: #ff680aff;
 }
 .navbar .navbar-toggler{
     border: 0;
@@ -73,7 +73,14 @@ div#map {
 }
 .selection-box{
     background-color: #f9ff85ff;
-    border: 0.25rem solid #ff934fff;
+    border: 0.25rem solid #ff680aff;
+    color: #ff680aff;
+}
+.btn-location{
+    font-size: 1.6rem;
+    background-color: #df5368ff;
+    color: #fff;
+    width: 15rem;
 }
 
 /*-----------------------------------------------------Recommended*/
@@ -82,7 +89,7 @@ div#map {
 }
 .recommended-box{
     background-color: #f9ff85ff;
-    border: 0.25rem solid #ff934fff;
+    border: 0.25rem solid #ff680aff;
 }
 
 /*-----------------------------------------------------Headings/Text*/
