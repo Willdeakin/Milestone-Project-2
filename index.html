@@ -17,11 +17,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
     <!--My Stylesheet-->
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    
+    <!--Leaflet API CSS-->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
           integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
           crossorigin=""/>
-    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <!--Leaflet API JS-->
+    <!--Make sure you put this AFTER Leaflet's CSS -->
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
             integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
             crossorigin=""></script>
@@ -51,16 +52,12 @@
 </section>
 <section class="container-fluid" id="pick">
     <div class="row pick-buttons">
-        <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" id="sunny_pick">Sunny</button>
-        <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" id="city_pick">City break</button>
+        <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" id="none_pick">All Holidays</button>
         <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" id="cultural_pick">Cultural</button>
         <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" id="sight_pick">Sightseeing</button>
         <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" id="wonder_pick">Natural Wonder</button>
-        <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" id="food_pick">Great Food</button>
-        <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" id="architecture_pick">Amazing Architecture</button>
         <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" onclick="hong_kong_map();" >Hong Kong</button>
-        <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" onclick="paris_map();" >Paris</button>
-        <button type="button" class="btn btn-primary col-3" data-toggle="button" aria-pressed="false" onclick="rome_map();" >Rome</button>
+        
 
     </div>
 </section>
@@ -72,10 +69,52 @@
 <section id="selection">
     <h1 class="holiday-headings">Based on your tags:</h1>
     <div class="row">
-        <div class="col-6 selection-box">
+        <div class="col-6 selection-box sight cultural"><!--Berlin-->
             <div class="row">
                 <div class="col-6">
-                    <button type="button" class="btn btn-location" data-toggle="button" aria-pressed="false" onclick="berlin_map();" >Berlin</button>
+                    <h3>Berlin, Germany</h3>
+                <p>A summary of the destination and surrounding area</p>
+                </div>
+                <div class="col-6">
+                    <!--stock image-->
+                <p>A brief description of activities at the destination (filter tag appropriate)</p>
+                <button type="button" class="btn btn-location" data-toggle="button" aria-pressed="false" onclick="berlin_map();" >Go to this location on the map</button>
+                </div>
+            </div>
+        </div>
+         <div class="col-6 selection-box sight cultural">
+            <div class="row">
+                <div class="col-6">
+                    <h3>Paris, France</h3>
+                <p>A summary of the destination and surrounding area</p>
+                </div>
+                <div class="col-6">
+                    <!--stock image-->
+                <p>A brief description of activities at the destination (filter tag appropriate)</p>
+                <button type="button" class="btn btn-location" data-toggle="button" aria-pressed="false" onclick="paris_map();" >Go to this location on the map</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6 selection-box sight cultural"><!--Rome-->
+            <div class="row">
+                <div class="col-6">
+                    <h3>Rome, Italy</h3>
+                <p>A summary of the destination and surrounding area</p>
+                </div>
+                <div class="col-6">
+                    <!--stock image-->
+                <p>A brief description of activities at the destination (filter tag appropriate)</p>
+                <button type="button" class="btn btn-location" data-toggle="button" aria-pressed="false" onclick="rome_map();" >Go to this location on the map</button>
+                </div>
+            </div>
+        </div>
+         <div class="col-6 selection-box">
+            <div class="row">
+                <div class="col-6">
+                    <h3>Destination</h3>
                 <p>A summary of the destination and surrounding area</p>
                 </div>
                 <div class="col-6">
@@ -84,18 +123,13 @@
                 </div>
             </div>
         </div>
-         <div class="col-6 selection-box" id="sunny">
-            <div class="row">
-                <div class="col-6">
-                    <h4>Destination</h4>
-                <p>A summary of the destination and surrounding area</p>
-                </div>
-                <div class="col-6">
-                    <!--stock image-->
-                <p>A brief description of activities at the destination (filter tag appropriate)</p>
-                </div>
-            </div>
-        </div>
+
+
+
+
+
+
+
     </div>
 </section>
 <section id="recommended">

@@ -4,10 +4,20 @@ var selectionArr = document.getElementsByClassName("selection-box");
 $(".selection-box").hide();
 */
 
-$("#sunny_pick").on('click', function() {
-    $('#sunny').toggle();
+
+$("#none_pick").on('click', function() {
+    $('.selection-box').show();
 });
-$("#city_pick").on('click', function() {
-    $('#city').toggle();
+$("#cultural_pick").on('click', function() {
+    $('.selection-box').hide();
+    $('.selection-box').filter('.cultural').toggle();
+});
+$("#sight_pick").on('click', function() {
+    $('.selection-box').hide();
+    $('.selection-box').filter('.sight').toggle();
+});
+$("#wonder_pick").on('click', function() {
+    $('.selection-box').hide();
+    $('.selection-box').filter('.wonder').toggle();
 });
 
