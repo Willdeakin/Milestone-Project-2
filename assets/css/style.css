@@ -80,13 +80,18 @@ ul li a {
     background-color: #f9ff85ff;
     border: 0.25rem solid #ff680aff;
     color: #ff680aff;
+    height: 45vh;
 }
 .btn-location{
     font-size: 1.6rem;
     background-color: #df5368ff;
     color: #fff;
 }
-
+.box-image{
+    height:20rem;
+    width: 20rem;
+    float: center;
+}
 /*-----------------------------------------------------Recommended*/
 #recommended{
     padding-top:5rem;
