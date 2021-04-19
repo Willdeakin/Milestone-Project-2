@@ -27,6 +27,34 @@
     berlin_gallery.bindPopup("<b>East Side Gallery</b><br>The East Side Gallery is an open-air gallery on the longest survuvung section of the Berlin wall").openPopup();
 
 
+    var rome_colosseum = L.marker([41.8902, 12.4922]).addTo(mymap);
+    rome_colosseum.bindPopup("<b>The Colosseum</b><br>The Colosseum is the largest still standing roman structure, at almost 2 thousand years old it is also the largest standing ampitheater").openPopup();
+
+    var rome_vatican = L.marker([41.9029, 12.4534]).addTo(mymap);
+    rome_vatican.bindPopup("<b>Vatican City</b><br>The Vatican City is the smallest independent state in the world, containing many sites of Catholic importance such as the Sistine Chapel").openPopup();
+
+    var rome_museum = L.marker([41.903065, 12.466276]).addTo(mymap);
+    rome_museum.bindPopup("<b>Castel Sant'Angelo National Museum</b><br>The Castel Sant'Angelo has functioned as a papal residence and a fortress, now acessible by a bridge by the public with a large collection of historic weapons to view along with prison cells and papal apartments").openPopup();
+
+    var rome_trevi = L.marker([41.9009, 12.4861]).addTo(mymap);
+    rome_trevi.bindPopup("<b>Trevi Fountain</b><br>As Rome's largest fountain, it is said that tossing a coin into the Trevi Fountain assures your return to Rome").openPopup();
+
+    var rome_centro = L.marker([41.8982, 12.4773]).addTo(mymap);
+    rome_centro.bindPopup("<b>Centro Storico</b><br>Centro Storico is the historic centre of Rome, containing many historic sites and monuments to witness, as well as serving as a bustling hub of hospitality").openPopup();
+
+
+    var vegas_canyon = L.marker([36.1069, -112.1129]).addTo(mymap);
+    vegas_canyon.bindPopup("<b>The Grand Canyon</b><br>The Grand Canyon is an immense natural wonder, with its depth revealing millions of years of geological history and can be accessed by walking tours and helicopter tours").openPopup();
+
+    var vegas_fremont = L.marker([36.1558, -115.1178]).addTo(mymap);
+    vegas_fremont.bindPopup("<b>Fremont Street</b><br>Fremont Street is the oldest area of Las Vegas, with the street itself pedestrian-only and a long stretch covered by a canopy of LED lights which illuminate the street below").openPopup();
+
+    var vegas_strip = L.marker([36.1147, -115.1728]).addTo(mymap);
+    vegas_strip.bindPopup("<b>The Strip</b><br>The Strip is the heart of Las Vegas, with a large array of extravagent themed hotels and acting as a centre for gambling and sporting events, the Strip is never quiet").openPopup();
+
+
+
+
     var iceland_lights = L.marker([63.7805,-20.3011]).addTo(mymap);
     iceland_lights.bindPopup("<b>Hotel Ranga</b><br>Hotel Ranga is one of the best places to witness the Aurora Borealis, only 90 minutes from Reykjavík, with astronomy experiences also on offer using Iceland's largest telescope").openPopup();
 
@@ -46,7 +74,6 @@
         [51.503, -0.06],
         [51.51, -0.047]
     ]).addTo(mymap);
-    marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
     circle.bindPopup("I am a circle.");
     polygon.bindPopup("I am a polygon.");
     var popup = L.popup()

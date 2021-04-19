@@ -71,11 +71,6 @@ ul li a {
 #mapid{
     min-height: 35rem;
 }
-div#map {
-    min-height: 360px;
-    min-width: 360px;
-    top:5rem;
-}
 
 /*-----------------------------------------------------Selection*/
 #selection{
@@ -99,6 +94,7 @@ div#map {
 .recommended-box{
     background-color: #f9ff85ff;
     border: 0.25rem solid #ff680aff;
+    color: #ff680aff;
 }
 
 /*-----------------------------------------------------Headings/Text*/
@@ -107,4 +103,20 @@ div#map {
     text-transform: underline;
     color: #df5368ff;
     font-family: 'Exo', serif;
+}
+
+/*-----------------------------------------------------Media Queries*/
+@media (min-width: 576px){
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+
+@media (min-width: 992px) {
+    div#mapid {
+    min-height: 500px;
+}
 }
