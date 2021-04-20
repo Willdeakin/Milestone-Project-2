@@ -121,7 +121,7 @@ ul li a {
 
 
 @media (min-width: 992px) {
-    div#mapid {
+    #mapid {
     min-height: 500px;
 }
 }
