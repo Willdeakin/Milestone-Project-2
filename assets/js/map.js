@@ -62,6 +62,46 @@
     var australia_uluru = L.marker([-25.3444,131.0369]).addTo(mymap);
     australia_uluru.bindPopup("<b>Uluru</b><br>Uluru is one of the natural wonders of the world, a huge stone monolith which is sacred to the indigenous Australians").openPopup();
 
+
+    var rio_sugarloaf = L.marker([-22.9493,-43.1546]).addTo(mymap);
+    rio_sugarloaf.bindPopup("<b>Sugarloaf Mountain</b><br>Sugarloaf Mountain is one of many monolithic mountains lining the water's edge around Rio De Janeiro, offering fantastic panoramic views around the city").openPopup();
+
+    var rio_christ = L.marker([-22.9519,-43.2105]).addTo(mymap);
+    rio_christ.bindPopup("<b>Christ the Redeemer</b><br>Christ the Redeemer is one of the most popular spots in Rio, stood above Rio De Janeiro it offers an excellent view of the city and the monument itself").openPopup();
+
+    var rio_museum = L.marker([-22.8944,-43.1795]).addTo(mymap);
+    rio_museum.bindPopup("<b>Museu do Amanha</b><br>Museu do Amanha is a museum, following the concept of the world through and anthropologic lense, with one of its five exhibits named 'us'").openPopup();
+
+    var rio_gardens = L.marker([-22.9674,-43.2250]).addTo(mymap);
+    rio_gardens.bindPopup("<b>The Botanical Gardens</b><br>The Rio De Janeiro Botanical Gardens cover 54 hectares of land in the south of the city, offering a massive and varied landscape of fauna").openPopup();
+
+
+    var egypt_pyramids = L.marker([29.9792,31.1342]).addTo(mymap);
+    egypt_pyramids.bindPopup("<b>The Great Pyramid of Giza</b><br>The Great Pyramid of Giza is the oldest and largest pyramid in the Giza complex, needing many engineering techniques not used to buld the smaller pyramids because of its size").openPopup();
+
+    var egypt_museum = L.marker([30.0476,31.2336]).addTo(mymap);
+    egypt_museum.bindPopup("<b>The Egyptian Museum</b><br>The Egyptian Museum is an extensive collection of Egyptian antiquities, with only a fraction of its 120,000 item colllection on show, it sits just beside the central square of downtown Cairo").openPopup();
+
+    var egypt_souq = L.marker([30.0477,31.2623]).addTo(mymap);
+    egypt_souq.bindPopup("<b>Khan el-Khalili (Souq Quarter)</b><br>Khan el-Khalili is a grand bazaar, taking up a labarynthine network of alleyways, the largest of which are given fully to the tourist trade").openPopup();
+
+    var egypt_mosque= L.marker([30.0457,31.2627]).addTo(mymap);
+    egypt_mosque.bindPopup("<b>Al-Azhar Mosque</b><br>Al-Azhar Mosque is the leading theological centre of the Islamic world, as one of the oldest surviving mosques and universities in the world").openPopup();
+
+
+    var paris_tower= L.marker([48.8584,2.2945]).addTo(mymap);
+    paris_tower.bindPopup("<b>The Eiffel Tower</b><br>The Eiffel Tower is an iconic monument that was constructed for the 1889 World's Fair, which dominates the skyline of a large portion of the city").openPopup();
+
+    var paris_museum= L.marker([48.8606,2.3376]).addTo(mymap);
+    paris_museum.bindPopup("<b>The Louvre Museum</b><br>The Louvre Museum is the world's largest art and historic museum, housing many great works of art such as the Mona Lisa, and is situated near the centre of the city").openPopup();
+
+    var paris_notre= L.marker([48.8530,2.3499]).addTo(mymap);
+    paris_notre.bindPopup("<b>The Notre Dame Cathedral</b><br>The Notre Dame Cathedral is currently under renovation until 2024 following a fire which started in the eves, meaning it will be closed, but it's still worth a look as the stone-built gothic architecture still stands proud").openPopup();
+
+    var paris_arc= L.marker([48.8738,2.2950]).addTo(mymap);
+    paris_arc.bindPopup("<b>The Arc de Triomphe</b><br>The Arc de Triomphe stands at the western end of the Champs-Élysées, another popular tourism spot, to honour all who fought for france in the Napoleonic wars").openPopup();
+
+
     var marker = L.marker([51.5, -0.09]).addTo(mymap);
     var circle = L.circle([51.508, -0.11], {
         color: 'red',
@@ -100,4 +140,13 @@
     }
     function paris_map() {
         mymap.setView([48.8566,2.3522],13);
+    }
+    function cape_map() {
+        mymap.setView([-33.9249,18.4241],13);
+    }
+    function dubai_map() {
+        mymap.setView([25.2048,55.2708],13);
+    }
+    function cairo_map() {
+        mymap.setView([30.0444,31.2357],13);
     }
