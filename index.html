@@ -53,7 +53,7 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item mr-2"><a class="nav-link" href="#pick">Pick your holiday</a></li>
-                    <li class="nav-item mr-2"><a class="nav-link" href="#map">Go to our map</a></li>
+                    <li class="nav-item mr-2"><a class="nav-link" href="#mapid">Go to our map</a></li>
                     <li class="nav-item mr-2"><a class="nav-link" href="#selection">Your selection</a></li>
                     <li class="nav-item mr-2"><a class="nav-link" href="#recommended">Our recommended destinations</a></li>
                 </ul>
@@ -95,7 +95,7 @@
                     <!--stock image-->
                     <img src="assets/images/berlin.png" alt="Berlin" class="box-image">
                 <p>weather</p>
-                <button type="button" class="btn btn-location" data-toggle="button" aria-pressed="false" onclick="berlin_map();" >Go to this location on the map</button>
+                <button type="button" class="btn btn-location" data-toggle="button" aria-pressed="false" onclick="berlin_map();">Go to this location on the map</button>
                 </div>
             </div>
         </div>
@@ -256,13 +256,18 @@
         </div>
 
 </section>
-<footer>
+<footer class="container-fluid" id="footer">
+    <div class="row">
+        <div class="col-5"></div>
+        <div class="col-2">
     <form onsubmit="return sendMail(this);">
             <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
             <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
             <input type="text" name="holidaytype" class="form-control" id="holidaytype" placeholder="Your favourite holiday tag" required></textarea>
-            <button type="submit" class="btn btn-secondary">Join Our Mail List</button>
+            <button type="submit" class="btn">Join Our Mail List</button>
     </form>
+    </div>
+    </div>
 </footer>
 <!--My email js-->
 <script src="assets/js/sendEmail.js"></script>

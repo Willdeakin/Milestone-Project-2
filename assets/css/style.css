@@ -100,6 +100,7 @@ ul li a {
     background-color: #f9ff85ff;
     border: 0.25rem solid #ff680aff;
     color: #ff680aff;
+    height: 45vh;
 }
 
 /*-----------------------------------------------------Headings/Text*/
@@ -110,6 +111,10 @@ ul li a {
     font-family: 'Exo', serif;
 }
 
+/*-----------------------------------------------------Footer*/
+#footer{
+    padding-top: 3rem;
+}
 /*-----------------------------------------------------Media Queries*/
 @media (min-width: 576px){
 
