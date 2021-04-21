@@ -115,6 +115,15 @@ ul li a {
 #footer{
     padding-top: 3rem;
 }
+form{
+    align-content: center;
+    position: relative;
+}
+.btn-form{
+    background-color: #37b2e6ff;
+    border-color: #37b2e6ff;
+    color:#fff;
+}
 /*-----------------------------------------------------Media Queries*/
 @media (min-width: 576px){
 
