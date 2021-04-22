@@ -20,17 +20,55 @@ My second Code Institute milestone project concerning User Centric Frontend Deve
 ## Purpose of the website
 
 ### User Experience Design
-
 #### User Stories
 
+##### As a first time visitor:
+- As a first time visitor, I want to easily navigate this website
+- As a first time visitor, I want there to be content which will help me decide on a holiday location
+- As a first time visitor, I want to be able to use this website comfortably on any of my devices
+
+##### As a returning visitor:
+- As a returning visitor, I want to easily find any locations I have previously seen on the site
+- As a returning visitor, I want to see locations which I may not have seen on the site before
+
+##### As a frequent visitor
+- As a frequent visitor, I want to sign up to a newsletter to recieve emails regarding holiday destinations
+- As a frequent visitor, I want to also access a government website to see if the holidays displayed are currently at high risk of COVID-19
 #### Structure
 
 #### Design and Wireframes
+I have grouped my wireframes into sections below, with each set consisting of a small, mid and large sized screen.
 
+Pick Section
+
+![My pick section wireframes](assets/wireframes/pick.png)
+
+Selection Section
+
+![My selection section wireframes](assets/wireframes/selection.png)
+
+Recommended Section
+
+![My recommended section wireframes](assets/wireframes/recommended.png)
+
+To access these wireframes seperately, click the links below:
+* [My pick section wireframes](assets/wireframes/pick.png)
+* [My selection section wireframes](assets/wireframes/selection.png)
+* [My recommended section wireframes](assets/wireframes/recommended.png)
+
+##### Divergences from my wireframes
+In my wireframes for both the selection and recommended sections, I have allocated the space under the image for each location as sapce for a weather API. I had difficulty with the API weather js and elected to instead use a form at the bottom linked to email js for a second API.
 
 ## Features
+- The dominating feature of this website is the interactive map, which uses [Leaflet 1.7.1](https://leafletjs.com/), an open source map API. I used a JS file to add a number of markers which have popup text when clicked. I also added the ability to pan the map immediately to a location by pressing the button at the bottom left of each location's box.
 
-### Existing Features
+- To work along with the map and box layout of the website, I added buttons towards the top of the page which filter a single tag when pressed (e.g. when the cultural tag is pressed, the selection section only shows boxes with the cultural tag)
+
+- The form at the page footer can be filled out and submitted, with an auto reply message sent to the filled in email.
+
+### Features I Would Have Liked To Implement
+
+- As mentioned in the divergences from wireframes subsection, I didn't manage to implement the weather API properly, and I think this would have been an intuitive and useful tool for this website to include.
 
 
 ## Technologies
@@ -38,20 +76,22 @@ My second Code Institute milestone project concerning User Centric Frontend Deve
     * This project uses HTML for the structure and content of the site.
 * CSS
     * This project uses a custom CSS file to style the site.
+* JS
+    * This project uses custom JS files to add functionality to the site.
 * [Bootstrap](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
     * This project uses Bootstrap CSS and JS to style the site and add layout and various functionalities such as buttons.
-* [Fontawesome](https://fontawesome.com/)
-    * This project uses Fontawesome to add icons in the site.
 * [Google fonts](https://fonts.google.com/)
     * This project uses Google fonts to style the text in the site.
-* [Hover effects](https://cdnjs.com/libraries/hover.css/2.1.1)
-    * This project uses Hover effects to style the text and icons in the site.
 * [Balsamiq Wireframes](https://balsamiq.com/wireframes/?gclid=CjwKCAiA9bmABhBbEiwASb35Vz5eNriDRNqnP0yfLYeqI0aYF9r5Qf45QNEoXootlZ-VmwSloDl8rRoCdbcQAvD_BwE)
     * Balsamiq Wireframes were used to create wireframes for UX design.
 * [Github](https://github.com/)
     * This project uses Github as the hosting site, which stores the code and deploys the site through [Gitpages](https://pages.github.com/).
 * [Coolors](https://coolors.co/)
     * This project uses a colour scheme developed from the artist's album art through Coolors.
+* [Leaflet 1.7.1](https://leafletjs.com/)
+    * This project uses an interactive map developed from the Leaflet API.
+* [Email.js](https://www.emailjs.com/)
+    * EmailJS is used to add functionality to the form at the bottom of the page, sending an automatic response to the user.
 
 
 ## Testing and Bug Fixes

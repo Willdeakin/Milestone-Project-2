@@ -54,7 +54,6 @@ ul li a {
 }
 .btn-primary{
     font-size: 2.4rem;
-    position: center;
     width: 24.5%;
     margin-right: 0;
     display: inline-block;
@@ -151,7 +150,6 @@ ul li a {
 /*-----------------------------------------------------Headings/Text*/
 .holiday-headings{
     text-align:center;
-    text-transform: underline;
     color: #df5368ff;
     font-family: 'Exo', serif;
 }
