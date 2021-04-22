@@ -86,12 +86,51 @@ ul li a {
     font-size: 1.6rem;
     background-color: #df5368ff;
     color: #fff;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
 }
-.box-image{
-    height:20rem;
-    width: 20rem;
-    float: center;
+.image{
+    position: absolute;
+    top:1rem;
+    right: 1rem;
+    min-height: 20rem;
+    background-size: 100%;
+    max-width: 50vw;
+    height:auto;
+    max-height:100rem; 
 }
+.berlin{
+    background: url("../images/berlin.png") no-repeat center; 
+}
+.iceland{
+    background: url("../images/iceland.png") no-repeat center;
+}
+.paris{
+    background: url("../images/paris.png") no-repeat center;
+}
+.rio{
+    background: url("../images/rio.png") no-repeat center;
+}
+.rome{
+    background: url("../images/rome.png") no-repeat center;
+}
+.uluru{
+    background: url("../images/uluru.png") no-repeat center;
+}
+.vegas{
+    background: url("../images/vegas.png") no-repeat center;
+}
+.dubai{
+    background: url("../images/dubai.png") no-repeat center;
+}
+.cape{
+    background: url("../images/cape.png") no-repeat center;
+}
+.cairo{
+    background: url("../images/cairo.png") no-repeat center;
+}
+
 /*-----------------------------------------------------Recommended*/
 #recommended{
     padding-top:5rem;
@@ -101,6 +140,9 @@ ul li a {
     border: 0.25rem solid #ff680aff;
     color: #ff680aff;
     height: 45vh;
+}
+.recommended-box p{
+    font-size: 1.2rem;;
 }
 
 /*-----------------------------------------------------Headings/Text*/
@@ -124,8 +166,14 @@ form{
     border-color: #37b2e6ff;
     color:#fff;
 }
+.form-group{
+    font-size:2rem;
+    }
 /*-----------------------------------------------------Media Queries*/
 @media (min-width: 576px){
+    .image{
+    max-width: 25vw;
+}
 
 }
 
@@ -137,5 +185,5 @@ form{
 @media (min-width: 992px) {
     #mapid {
     min-height: 500px;
-}
+    }
 }
