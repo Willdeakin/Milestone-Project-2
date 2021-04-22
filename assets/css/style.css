@@ -100,6 +100,9 @@ ul li a {
     height:auto;
     max-height:100rem; 
 }
+.selection-box p{
+    font-size: 1.2rem;
+}
 .berlin{
     background: url("../images/berlin.png") no-repeat center; 
 }
@@ -142,7 +145,7 @@ ul li a {
     height: 45vh;
 }
 .recommended-box p{
-    font-size: 1.2rem;;
+    font-size: 1.2rem;
 }
 
 /*-----------------------------------------------------Headings/Text*/
@@ -186,4 +189,19 @@ form{
     #mapid {
     min-height: 500px;
     }
+    .selection-box p{
+    font-size: 1.4rem;
+}
+    .recommended-box p{
+    font-size: 1.4rem;
+}
+}
+
+@media (min-width: 1200px) {
+    .selection-box p{
+    font-size: 1.6rem;
+}
+    .recommended-box p{
+    font-size: 1.6rem;
+}
 }
