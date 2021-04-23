@@ -126,6 +126,67 @@ Each browser should fulfill the following test cases upon testing:
 |  All location buttons should pan the map to the corresponding location 	|   TC4	|
 |  Each pick button should filter locations correctly 	|   TC5	|
 
+
+#### TC1
+
+Testing process:
+- Open website in the tested browser
+- Right click and inspect element
+- Change device width for each size class (small, medium and large)
+
+Test case results for each browser:
+- Google chrome - Testing all 3 size classes, the webpage acted as desired and passed.
+- Microsoft edge - Testing all 3 size classes, the webpage acted as desired and passed.
+- Mozilla firefox - Testing all 3 size classes, the webpage acted as desired and passed.
+
+#### TC2
+
+Testing process:
+- Open website in the tested browser
+- Left click each external link in the website
+- Confirm each link creates a new tab with the desired hyperlink
+
+Test case results for each browser:
+- Google chrome - The external link to the UK government website worked as intended and passed.
+- Microsoft edge - The external link to the UK government website worked as intended and passed.
+- Mozilla firefox - The external link to the UK government website worked as intended and passed.
+
+#### TC3
+
+Testing process:
+- Open website in the tested browser
+- Left click each nav element
+- Confirm each nav link brings one to the desired section
+
+Test case results for each browser:
+- Google chrome - All nav elements took the page to the desired section, this was a pass.
+- Microsoft edge - All nav elements took the page to the desired section, this was a pass.
+- Mozilla firefox - All nav elements took the page to the desired section, this was a pass.
+
+#### TC4
+
+Testing process:
+- Open website in the tested browser
+- Click the 'Go to this location on the map' button for each location
+- Check on the map that it has panned correctly
+
+Test case results for each browser:
+- Google chrome - Every location button panned the map as intended and passed.
+- Microsoft edge - Every location button panned the map as intended and passed.
+- Mozilla firefox - Every location button panned the map as intended and passed.
+
+#### TC5
+
+Testing process:
+- Open website in the tested browser
+- Click each filter button
+- Check that the intended locations have been left on the page
+
+Test case results for each browser:
+- Google chrome - Every location that should have been present was as intended and passed.
+- Microsoft edge - Every location that should have been present was as intended and passed.
+- Mozilla firefox - Every location that should have been present was as intended and passed.
+
 ## Deployment
 
 ### Project Creation
