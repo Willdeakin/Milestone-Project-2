@@ -7,14 +7,13 @@ My second Code Institute milestone project concerning User Centric Frontend Deve
     * [User Stories](#user-stories)
     * [Structure](#structure)
     * [Design and Wireframes](#design-and-wireframes)
-* [Features](#Features)
-    * [Existing Features](#existing-features)
-* [Technologies](#Technologies)
+* [Features](#features)
+* [Technologies](#technologies)
 * [Testing and Bug Fixes](#testing-and-bug-fixes)
 * [Deployment](#deployment)
     * [Project Creation](#project-creation)
     * [GitHub Pages](#using-github-pages)
-    * [Locally](run-locally)
+    * [Locally](#run-locally)
 * [Credits](#credits)
 
 ## Purpose of the website
@@ -70,7 +69,7 @@ To access these wireframes seperately, click the links below:
 ##### Divergences from my wireframes
 In my wireframes for both the selection and recommended sections, I have allocated the space under the image for each location as sapce for a weather API. I had difficulty with the API weather js and elected to instead use a form at the bottom linked to email js for a second API.
 
-## Features
+# Features
 - The dominating feature of this website is the interactive map, which uses [Leaflet 1.7.1](https://leafletjs.com/), an open source map API. I used a JS file to add a number of markers which have popup text when clicked. I also added the ability to pan the map immediately to a location by pressing the button at the bottom left of each location's box.
 
 - To work along with the map and box layout of the website, I added buttons towards the top of the page which filter a single tag when pressed (e.g. when the cultural tag is pressed, the selection section only shows boxes with the cultural tag)
@@ -187,6 +186,26 @@ Test case results for each browser:
 - Microsoft edge - Every location that should have been present was as intended and passed.
 - Mozilla firefox - Every location that should have been present was as intended and passed.
 
+
+The HTML Page was validated using the [W3C Markdown Validator](https://validator.w3.org/nu/#textarea) and showed no errors, but showed 2 warnigns for a lack of headings at section heads and 2 warnings that type="text/javascript" is unneccessary. I elected to ignore these warnings, as the sections without headings didn't need headings in my opinion and the type="text/javascript", although unnecessary helps me identify each imported file more quickly.
+
+The CSS Page was validated using the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/validator) and showed no errors, but gave 3 warning that buttons had the same background-color and border-color, and one warning saying the Imported style sheets are not checked in direct input and file upload modes. I ignored these warnings as they are how I intended the website to be presented.
+
+- As a first time visitor, I want to easily navigate this website - testing was performed to ensure that sections had a clear purpose through headings and content, and were easy to follow.
+- As a first time visitor, I want there to be content which will help me decide on a holiday location - testing was performed to ensure that there was information pertinent to the holiday destinations displayed.
+- As a first time visitor, I want to be able to use this website comfortably on any of my devices - testing was performed on a variety of screen sizes to ensure ease of access and responsivity on all devices.
+
+- As a returning visitor, I want to easily find any locations I have previously seen on the site - testing was performed to ensure that each of the locations included in the webpage were clearly presented.
+- As a returning visitor, I want to see locations which I may not have seen on the site before - testing was performed to ensure that each of the locations included in the webpage were clearly presented.
+
+- As a frequent visitor, I want to sign up to a newsletter to recieve emails regarding holiday destinations - testing was performed to ensure that the newsletter signup form at the bottom of the page had functionality.
+- As a frequent visitor, I want to also access a government website to see if the holidays displayed are currently at high risk of COVID-19 - testing was performed to ensure that the government page link was in working order.
+
+#### Notable bug fixes during coding and testing
+
+- Before my testing session, I noticed the government link didn't open into a new window, which was quickly rectified.
+- I had issues formatting the images to stay within the boxes and to present properly, which I solved by changing from background images to <img> tags and formatted with CSS.
+- I had issues trying to use the google maps API and weather.js API, and switched them out for leaflet which worked as I intended to use google maps, and swapped the weather.js API for an email API instead.
 ## Deployment
 
 ### Project Creation
@@ -213,3 +232,15 @@ I used Gitpod to write and edit these files, using the bash terminal for saving,
     - Open a development editor and a terminal window within the directory.
     - Use 'git clone' in the terminal followed by the copied URL.
     - You now have a copy of the project in your directory.
+
+## Credits
+- Code
+    - The code of this project was created by Will Deakin.
+
+- Content
+    - The content of this project was created by Will Deakin.
+
+- Media
+    - The media used in this project is sourced from the stock images of locations, published works and from online publications.
+
+Thanks to my mentor Spencer Barriball for feedback and guidance for this project, which lead me in good stead.
