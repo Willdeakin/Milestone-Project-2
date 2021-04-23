@@ -1,10 +1,5 @@
 var selectionArr = document.getElementsByClassName("selection-box");
 
-/*
-$(".selection-box").hide();
-*/
-
-
 $("#none_pick").on('click', function() {
     $('.selection-box').show();
 });
@@ -20,4 +15,3 @@ $("#wonder_pick").on('click', function() {
     $('.selection-box').hide();
     $('.selection-box').filter('.wonder').toggle();
 });
-

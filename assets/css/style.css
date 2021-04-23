@@ -101,7 +101,6 @@ ul li a {
     font-size: 0.9rem;
 }
 
-
 /*-----------------------------------------------------Recommended*/
 #recommended{
     padding-top:5rem;
@@ -139,6 +138,7 @@ form{
 .form-group{
     font-size:2rem;
     }
+    
 /*-----------------------------------------------------Media Queries*/
 @media (min-width: 576px){
 .box-image{

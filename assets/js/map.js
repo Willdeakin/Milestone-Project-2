@@ -42,8 +42,6 @@
     vegas_strip.bindPopup("<b>The Strip</b><br>The Strip is the heart of Las Vegas, with a large array of extravagent themed hotels and acting as a centre for gambling and sporting events, the Strip is never quiet").openPopup();
 
 
-
-
     var iceland_lights = L.marker([63.7805,-20.3011]).addTo(mymap);
     iceland_lights.bindPopup("<b>Hotel Ranga</b><br>Hotel Ranga is one of the best places to witness the Aurora Borealis, only 90 minutes from Reykjavík, with astronomy experiences also on offer using Iceland's largest telescope").openPopup();
 
@@ -88,12 +86,7 @@
     cape_aquarium.bindPopup("<b>Two Oceans Aquarium</b><br>Two Oceans Aquarium holds a host of sea creatures from the bountiful Indian and Atlantic Oceans, and are a vital contributor to sealife conservation").openPopup();
     var cape_museum= L.marker([-33.9277,18.4237]).addTo(mymap);
     cape_museum.bindPopup("<b>District Six Museum</b><br>District Six Museum is an institution focused at looking at the local people and working in no small part as a centre for charitable activities for the area").openPopup();
-
-
-
-
-
-
+    
     function berlin_map() {
         mymap.setView([52.5200,13.4050],13);
     }
