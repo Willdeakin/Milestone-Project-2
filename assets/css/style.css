@@ -100,7 +100,7 @@ ul li a {
     max-height:100rem; 
 }
 .selection-box p{
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 .berlin{
     background: url("../images/berlin.png") no-repeat center; 
@@ -144,7 +144,7 @@ ul li a {
     height: 45vh;
 }
 .recommended-box p{
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 /*-----------------------------------------------------Headings/Text*/
@@ -197,9 +197,9 @@ form{
 
 @media (min-width: 1200px) {
     .selection-box p{
-    font-size: 1.6rem;
+    font-size: 2rem;
 }
     .recommended-box p{
-    font-size: 1.6rem;
+    font-size: 2rem;
 }
 }
