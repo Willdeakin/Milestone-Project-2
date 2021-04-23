@@ -37,6 +37,17 @@ My second Code Institute milestone project concerning User Centric Frontend Deve
 #### Structure
 
 #### Design and Wireframes
+
+##### Colour scheme
+I created a colour scheme through coolers to create a colourful, mosaic-like colour scheme which could match the holiday finding website. The main colours used, specifically together, are laser-lemon: ![#f7ff58ff](https://placehold.it/15/f7ff58ff/000000?text=+) and safety-orange-blaze-orange: ![#ff680aff](https://placehold.it/15/f7ff58ff/000000?text=+) for the header and the location boxes in particular.
+
+##### Typography
+I have used the same 2 fonts throughout the website; Exo for the navbar roboto slab for the body.
+
+##### Images
+I have used stock images of each location in the location's box in a 1:1 ratio.
+
+##### Wireframes
 I have grouped my wireframes into sections below, with each set consisting of a small, mid and large sized screen.
 
 Pick Section
@@ -92,10 +103,28 @@ In my wireframes for both the selection and recommended sections, I have allocat
     * This project uses an interactive map developed from the Leaflet API.
 * [Email.js](https://www.emailjs.com/)
     * EmailJS is used to add functionality to the form at the bottom of the page, sending an automatic response to the user.
+* [Jquery](https://jquery.com/)
+    * Jquery is used in this project as a method of adding functionality, specifically to the pick buttons toward the top of the page.
 
 
 ## Testing and Bug Fixes
+This webpage is front end oriented, and as such will be tested for its layout and responsiveness across browsers and page sizes. I will also be testing each feature (the picking filter etc.)
+Testing will be done across google chrome, mozilla firefox and microsoft edge at small (phone), medium (tablet/notebook) and large (any larger screen) sizes.
 
+To be considered successful, in each browser and at each size the webpage should;
+- Contain working and correct hyperlinks, both internal and external, with external links opening in a fresh tab.
+- Have no overlapping divs/ sections such that the layout is compromised.
+- Display a similar layout as to the wireframes provided above, with the exception of changes in layout design mentioned alongside the wireframes.
+
+Each browser should fulfill the following test cases upon testing:
+
+| Test Description  	|   Shorthand Reference	|
+|---	|---	|
+|  Layout should be preserved at all window sizes	|  TC1 	|
+|  All external links should be in correct working order and create a fresh tab 	|   TC2 |
+|  All internal links should be in correct working order 	|   TC3 |
+|  All location buttons should pan the map to the corresponding location 	|   TC4	|
+|  Each pick button should filter locations correctly 	|   TC5	|
 
 ## Deployment
 
