@@ -53,14 +53,14 @@ ul li a {
     padding-bottom: 2rem;
 }
 .btn-primary{
-    font-size: 2.4rem;
+    font-size: 1.2rem;
     width: 24.5%;
     margin-right: 0;
     display: inline-block;
     vertical-align:top;
     background-color: #37b2e6ff;
     border-color: #37b2e6ff;
-    min-height: 3rem;
+    min-height: 2rem;
 }
 .active{
     background-color: red;
@@ -155,7 +155,10 @@ form{
     .recommended-box p{
     font-size: 1rem;
 }
-    
+    .btn-primary{
+    font-size: 2.4rem;
+    min-height: 3rem;
+}
 }
 
 @media (min-width: 992px) {

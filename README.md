@@ -139,9 +139,9 @@ I used Gitpod to write and edit these files, using the bash terminal for saving,
 ### Using GitHub Pages
 - Access the GitHub repository [here](https://github.com/Willdeakin/Milestone-Project-2/).
 - Click the Settings tab in the tabs menu.
-- Scroll to the Github Pages section.
+- Click Pages on the left hand set of tabs.
 - Make sure that the branch selected is main; it should already be selected, if not this should be saved with the button just next to the branch dropdown.
-- Click the link on the first line, which should read 'https://willdeakin.github.io/Milestone-Project-2/'
+- Click the link on the line in the green box, which should read 'https://willdeakin.github.io/Milestone-Project-2/'
 
 ### Run Locally
 - Access the GitHub repository [here](https://github.com/Willdeakin/Milestone-Project-2/).
