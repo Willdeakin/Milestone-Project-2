@@ -89,6 +89,14 @@ ul li a {
     bottom: 1rem;
     right: 1rem;
 }
+.box-image{
+    position: absolute;
+    top:1rem;
+    right: 1rem;
+    min-height: 20rem;
+    max-width: 50vw;
+    max-height:35vh; 
+}
 .image{
     position: absolute;
     top:1rem;
@@ -100,7 +108,7 @@ ul li a {
     max-height:100rem; 
 }
 .selection-box p{
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 .berlin{
     background: url("../images/berlin.png") no-repeat center; 
@@ -144,7 +152,7 @@ ul li a {
     height: 45vh;
 }
 .recommended-box p{
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 /*-----------------------------------------------------Headings/Text*/
@@ -172,34 +180,40 @@ form{
     }
 /*-----------------------------------------------------Media Queries*/
 @media (min-width: 576px){
-    .image{
-    max-width: 25vw;
-}
+
 
 }
 
 @media (min-width: 768px) {
-
+.selection-box p{
+    font-size: 1rem;
 }
-
+    .recommended-box p{
+    font-size: 1rem;
+}
+    .box-image{
+    max-width: 25vw;
+    max-height:35vh; 
+}
+}
 
 @media (min-width: 992px) {
     #mapid {
     min-height: 500px;
     }
     .selection-box p{
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
     .recommended-box p{
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 }
 
 @media (min-width: 1200px) {
     .selection-box p{
-    font-size: 2rem;
+    font-size: 1.9rem;
 }
     .recommended-box p{
-    font-size: 2rem;
+    font-size: 1.9rem;
 }
 }
