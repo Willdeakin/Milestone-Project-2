@@ -35,6 +35,26 @@ My second Code Institute milestone project concerning User Centric Frontend Deve
 - As a frequent visitor, I want to also access a government website to see if the holidays displayed are currently at high risk of COVID-19
 #### Structure
 
+The website is contained within a single page, with a navbar containing hyperlinks attached to the top of the screen. The navbar is collapsible for small and medium devices such that space can be saved while maintaining functionality. The purpose of this is to fulfill user story:
+> As a first time visitor, I want to easily navigate this website
+
+The website has a paragraph of text for each location featured. The purpose of this is to fulfill user story:
+> As a first time visitor, I want there to be content which will help me decide on a holiday location
+
+The website is designed with responsivity in mind, creating an easy-on-the-eye bootstrap based layout at all screen sizes. The purpose of this is to fulfill user story:
+> As a first time visitor, I want to be able to use this website comfortably on any of my devices
+
+The website is set in a linear fashion with each location represented by its name and an image next to it. The purpose of this is to fulfill user story:
+> As a returning visitor, I want to easily find any locations I have previously seen on the site
+> As a returning visitor, I want to see locations which I may not have seen on the site before
+
+The website has a form at the bottom of the page which can be filled out and has full functionality. The purpose of this is to fulfill user story:
+> As a frequent visitor, I want to sign up to a newsletter to recieve emails regarding holiday destinations
+
+The website has a warning banner under the navbar which warns that the locations may not be currently safe to travel to due to COVID-19 and has a link to the UK government website. The purpose of this is to fulfill user story:
+> As a frequent visitor, I want to also access a government website to see if the holidays displayed are currently at high risk of COVID-19
+> As a first time visitor, I want there to be content which will help me decide on a holiday location
+
 #### Design and Wireframes
 
 ##### Colour scheme
