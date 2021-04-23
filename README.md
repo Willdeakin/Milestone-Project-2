@@ -100,7 +100,7 @@ In my wireframes for both the selection and recommended sections, I have allocat
 
 - As mentioned in the divergences from wireframes subsection, I didn't manage to implement the weather API properly, and I think this would have been an intuitive and useful tool for this website to include.
 
-
+- I would have liked to add the functionality to the buttons which pan the map, to be able to also act as a hyperlink to the map.
 ## Technologies
 * HTML
     * This project uses HTML for the structure and content of the site.
